@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="format-detection" content="telephone=yes"/>
+    <meta name="viewport" id="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="viewport" content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no;">
+    <link rel="stylesheet" href="css/index.css"/>
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+</head>
+<body>
+    <div class="hide-box">
+        <div class="hide-img">
+            <img src="img/fanhui.jpg" alt=""/>
+            <p>xxxxxxxxxxxx</p>
+        </div>
+    </div>
+    <header>
+        <h1>和田玉入行十年，以质为本，以诚待人。</h1>
+        <div class="index-info">
+            <img src="img/tx.png" alt="" width="50"/>
+            <p>隆疆玉石</p>
+            <span>精美 和田 玉器</span>
+        </div>
+    </header>
+    <section>
+
+    </section>
+    <footer>
+        <img src="img/tx.png" alt="" class="foot-tx"/>
+        <div>
+            <p><img src="img/xioc.png" alt=""/>微信长按复制：</p>
+            <p>lsss12 或 jssjsd</p>
+        </div>
+        <img src="img/wx.gif" alt="" class="foot-wx"/>
+    </footer>
+    <script>
+    (function (window, location) {
+
+    history.replaceState(null, document.title, location.pathname + "#!/stealingyourhistory");
+
+    history.pushState(null, document.title, location.pathname);
+
+    window.addEventListener("popstate", function () {
+
+    if (location.hash === "#!/stealingyourhistory") {
+
+    history.replaceState(null, document.title, location.pathname);
+
+    setTimeout(function () {
+    $('.hide-box').css('display', 'block');
+    }, 0);
+    }
+    }, false);
+    }(window, location));
+    </script>
+</body>
+
+</html>
