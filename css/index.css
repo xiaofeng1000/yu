@@ -110,6 +110,7 @@ footer >div >p >img{
     cursor: pointer;
     z-index: 100;
 }
+
 .left{
     left: 10px;
 }
